@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="create.css">
+</head>
+
+<body>
+    <div class="dialog">
+        <div class="popup-header">
+            <div class="logo-slogan">
+                <img class="logo-white" src="/img/contact/logo-white.svg">
+                <h1>Add contact</h1>
+                <p>Tasks are better with a team!</p>
+            </div>
+            <div class="img-container">
+                <img class="popup-header-img" src="/img/contact/cancel.svg">
+            </div>
+            
+        </div>
+
+        <main>
+            <div class="icon-container">
+                <img src="/img/contact/person-white.svg" alt="Person Icon" class="person-icon">
+            </div>
+            <form onsubmit="saveContact(event)" id="addContact" class="contact-description">
+                <div class="input-group">
+                   <input type="text" id="name" name="name" placeholder="Name">
+                   <img src="/img/contact/person.svg" class="input-icon" alt="Person Icon">
+                </div>
+                <div class="input-group">
+                   <input type="email" id="email" name="email" placeholder="Email">
+                   <img src="/img/contact/mail.svg" class="input-icon" alt="Mail Icon">
+                </div>
+                <div class="input-group">
+                   <input type="text" id="phone" name="phone" placeholder="Phone">
+                   <img src="/img/contact/call.svg" class="input-icon" alt="Call Icon">
+                </div>
+                <div class="button-group">
+                   <button type="button" onclick="closeContactDialog()" class="cancel-btn">Cancel <img src="/img/contact/iconoir_cancel.svg" alt=""></button>
+                   <button type="submit" class="create-btn">Create contact <img src="/img/contact/check-btn.svg" alt=""></button>
+                </div>
+             </form>
+          </main>
+    </div>
+</body>
+
+</html>
